@@ -1,11 +1,10 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import React from 'react';
+import Dashboard from './dashboard/page';
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <Dashboard />
     </>
   );
 }

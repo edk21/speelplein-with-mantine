@@ -2,6 +2,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
+import { Header } from '@/components/header/Header';
 
 export const metadata = {
   title: 'Speelplein Management',
@@ -20,7 +21,10 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <Header />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
